@@ -1,0 +1,354 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #181818; /* Dark background */
+  color: #ffffff; /* White text */
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  padding: 0 20px;
+  background-color: #292929; /* Dark background for header */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* For responsiveness */
+}
+
+/* Left Section (Message and Icons) */
+.intro-text {
+  flex: 1;
+  text-align: left;
+  padding-right: 30px;
+}
+
+.intro-text h1 {
+  font-size: 30px;
+  color: #ffffff; /* Mustard Yellow */
+  margin: 0;
+}
+
+.intro-text h2 {
+  font-size: 50px;
+  color: #ffffff;
+  text-align: left;
+}
+.intro-text-name {
+  color: #ffc107;
+}
+.intro-text .role {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #dcdcdc;
+  margin-top: 10px;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-left: -6px;
+}
+
+.social-icon {
+  color: #ffc107; /* Mustard Yellow */
+  font-size: 2rem;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+  height: 50px;
+  width: 50px;
+}
+.social-icon-img-ln {
+  width: 50px;
+  height: 50px;
+}
+.social-icon-img-gb {
+  margin-top: 5px;
+  width: 39px;
+  height: 39px;
+}
+.social-icon-img-ml {
+  margin-top: 5px;
+  width: 39px;
+  height: 39px;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Right Section (Profile Image) */
+.profile-image {
+  flex: 0 1 300px; /* Restricting the image size */
+  text-align: center;
+}
+
+.profile-image img {
+  /* width: 100%; */
+  height: 737px;
+  /* max-width: 250px; Controls the image size */
+  margin-top: -153px;
+  /* border-radius: 50%; */
+  /* border: 5px solid #ffc107; Mustard Yellow border */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+  }
+
+  .intro-text {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .profile-image {
+    margin-top: 20px;
+  }
+
+  .profile-image img {
+    max-width: 150px; /* Smaller image on mobile */
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .social-icon {
+    margin: 0 15px;
+  }
+}
+
+/* General Section Styles */
+section {
+  padding: 40px 0;
+}
+
+.skill-icon-img {
+  width: 80px;
+}
+/* Heading Styles */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ffc107; /* Mustard Yellow for headings */
+}
+
+/* Skills Section */
+#skills .skills-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#skills h2 {
+  margin-bottom: 50px;
+}
+
+.skill {
+  text-align: center;
+  width: 15%;
+}
+
+.skill i {
+  font-size: 3rem;
+  color: #ffc107; /* Mustard Yellow for icons */
+}
+
+.skill h3 {
+  margin-top: 10px;
+  color: #ffffff; /* White text for skill names */
+}
+.about-container h2 {
+  margin-top: 50px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 300;
+  text-align: justify;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+/* Cards Styles */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+  gap: 20px;
+}
+
+.card {
+  background-color: #292929; /* Dark Gray for cards */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  margin: 15px;
+  width: 23%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: #3c3c3c; /* Slightly lighter on hover */
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #ffc107; /* Mustard Yellow for titles */
+}
+
+.card p {
+  font-size: 1rem;
+  color: #dcdcdc;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ffc107; /* Mustard Yellow */
+  color: #181818; /* Dark Gray text */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffb300; /* Slightly darker mustard yellow on hover */
+}
+
+/* #contact {
+
+} */
+/* Contact Section */
+form {
+  background-color: #292929; /* Dark Gray for form background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  color: #ffc107; /* Mustard Yellow for labels */
+}
+
+form input,
+form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #555;
+  color: #ffffff; /* White text for inputs */
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #ffc107; /* Mustard Yellow for button */
+  color: #181818; /* Dark Gray text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ffb300; /* Darker mustard yellow on hover */
+}
+
+/* Footer Styles */
+footer {
+  background: #292929;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #ffc107; /* Mustard Yellow for footer links */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+  }
+
+  .intro-text {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .profile-image {
+    margin-top: 20px;
+  }
+
+  .profile-image img {
+    max-width: 150px; /* Smaller image on mobile */
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  #skills .skills-container {
+    flex-direction: column;
+  }
+
+  .skill {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
